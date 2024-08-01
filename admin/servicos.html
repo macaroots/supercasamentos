@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Super Casamentos</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <h1>Super Casamentos</h1>
+    </header>
+    <nav>
+        <a href="/index.html">Início</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/contato.html">Contato</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/agendamento.html">Agendamento online</a>
+        <a href="/login.html">Login</a>
+        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+        <span>
+            <span>Administração</span>
+            <a href="/admin/servicos.html">Serviços</a>
+            <a href="/admin/usuarios.html">Usuários</a>
+        </span>
+    </nav>
+    <main>
+        <h1>Serviços</h1>
+        <form>
+            <label>
+                <span>Nome</span>
+                <input name="nome">
+            </label>
+            <label>
+                <span>Duração</span>
+                <input name="duracao" type="number">
+            </label>
+            <label>
+                <span>Preço</span>
+                <input name="preco" type="number">
+            </label>
+            <label>
+                <span>Descrição</span>
+                <textarea name="descricao"></textarea>
+            </label>
+            <label>
+                <span>Imagem</span>
+                <input name="imagem" type="file">
+            </label>
+            <button>Enviar</button>
+        </form>
+
+        <nav>
+            <a href="/admin/servicos.html?pagina=1">1</a>
+            <a href="/admin/servicos.html?pagina=2">2</a>
+            <a href="/admin/servicos.html?pagina=3">3</a>
+            <a href="/admin/servicos.html?pagina=2">proxima</a>
+        </nav>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Duração (h)</th>
+                <th>Preço (R$)</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nome1</td>
+                <td>3</td>
+                <td>5</td>
+                <td>
+                    <button>editar</button>
+                    <button>apagar</button>
+                    <a href="#">editar</a>
+                    <a href="#">apagar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nome1</td>
+                <td>3</td>
+                <td>6</td>
+                <td>
+                    <button>editar</button>
+                    <button>apagar</button>
+                    <a href="#">editar</a>
+                    <a href="#">apagar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nome3</td>
+                <td>2</td>
+                <td>5</td>
+                <td>
+                    <button>editar</button>
+                    <button>apagar</button>
+                    <a href="#">editar</a>
+                    <a href="#">apagar</a>
+                </td>
+            </tr>
+        </table>
+        <nav>
+            <a href="/admin/servicos.html?pagina=1">1</a>
+            <a href="/admin/servicos.html?pagina=2">2</a>
+            <a href="/admin/servicos.html?pagina=3">3</a>
+            <a href="/admin/servicos.html?pagina=2">proxima</a>
+        </nav>
+    </main>
+    <footer>
+        <h1>Super Casamentos</h1>
+        <p>renato.lenz@ifce.edu.br</p>
+        <p>Desenvolvido por Renato</p>
+    </footer>
+</body>
+</html>

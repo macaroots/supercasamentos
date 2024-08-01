@@ -1,0 +1,15 @@
+body {
+    color: #262626;
+    background: #EFEFEF;
+}
+
+nav a {
+    color: #262626;
+    padding: 0.5em 1em;
+}
+
+#banner_inicial div {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 3em;
+}
