@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --cor: rgb(38, 0, 255);
+        --cor-fundo: green;
+        --display: grid;
+    }
+    body {
+        color: var(--cor);
+        background: var(--cor-fundo);
+    }
+    .grid-container {
+        --cor: yellow;
+        display: var(--display);
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 2fr 100px; */
+        gap: 1em;
+        grid-template-areas:
+          "a a b"
+          "a a b";
+    }
+    div {
+        border: 1px solid;
+    }
+    div:nth-child(1) {
+        /* grid-column: 2 / 4; */
+        grid-area: b;
+        background-color: var(--cor);
+        color: var(--cor-fundo);
+    }
+    div:nth-child(2) {
+        /* grid-row: 4 / 6; */
+        grid-area: a;
+        background-color: red;
+    }
+</style>
+<body>
+    <section class="grid-container">
+        <div>Coluna 1</div>
+        <div>Coluna 2</div>
+        <div>Coluna 3</div>
+        <div>pharetra 1 </div>
+        <div>2</div>
+        <div>3</div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </section>
+</body>
+</html>
