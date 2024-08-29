@@ -13,3 +13,30 @@ nav a {
     text-align: center;
     padding: 1em 3em;
 }
+
+img {
+    width: 100%;
+    /* max-width: 250px; */
+    /* aspect-ratio: 16 / 9; */
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+.menu, #menu_aberto {
+    display: none;
+}
+@media (max-width: 660px) {
+    .menu {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    input:checked ~ .nav-links {
+        display: block;
+    }
+}
